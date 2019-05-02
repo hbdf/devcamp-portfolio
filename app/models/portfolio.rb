@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+    has_many :technologies
     include Placeholder
     validates_presence_of :title, :thumb_image, :body, :main_image
 
