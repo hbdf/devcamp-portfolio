@@ -1,8 +1,10 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<h1> Blog posts</h1>
+<h1> <%= link_to "Blog Posts", blogs_path%> </h1>
 <%= @posts.inspect %> 
 
 <h1> SKills </h1>
 <%= @skills.inspect %>
+
+<h1> <%= link_to "portfolios", portfolios_path%> </h1>
