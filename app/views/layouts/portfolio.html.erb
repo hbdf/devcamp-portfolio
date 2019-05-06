@@ -6,18 +6,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div> 
-      <div> <%= link_to "Home", root_path %> </div> 
-      <div> <%= link_to "About", about_path %> </div> 
-      <div> <%= link_to "Contact", contact_path %> </div> 
-      <div> <%= link_to "Blog", blogs_path %> </div> 
-      <div> <%= link_to "Portfolio", portfolios_path %> </div> 
-    </div>
+    
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <% if !current_user.is_a?(OpenStruct) %>
@@ -27,6 +21,15 @@
       <%= link_to "Register", new_user_registration_path %>
     <% end %>
     <%= yield %>
+
+    <div> 
+      <div> <%= link_to "Home", root_path %> </div> 
+      <div> <%= link_to "About", about_path %> </div> 
+      <div> <%= link_to "Contact", contact_path %> </div> 
+      <div> <%= link_to "Blog", blogs_path %> </div> 
+      <div> <%= link_to "Portfolio", portfolios_path %> </div> 
+    </div>
+
     <p>Thanks for visiting me 
     <% if session[:source] %>
       from
