@@ -16,4 +16,8 @@ module ApplicationHelper
     greeting += " and you are on #{page_location} layout"
     content_tag(:p, greeting, class: "source-greeting")
   end
+
+  def copyright_generator
+    HelioViewTool::Renderer.copyright 'Helio Duarte', 'All rights reserved'
+  end
 end
