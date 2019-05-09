@@ -27,12 +27,12 @@
       <div class="container">
         <h1 class="blog-title">The Bootstrap Blog</h1>
         <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin)%>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-        <%= login_helper%>
         <%= yield %>
 
         <div class="col-sm-3 offset-sm-1 blog-sidebar">
@@ -66,20 +66,14 @@
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
-
-
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
-
-        
-
-        <%= source_helper("Blog")%>
       </div>
     </div>
-    
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+      <%= source_helper("Blog")%>
+    </footer>
   </body>
 </html>
