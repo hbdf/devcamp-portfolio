@@ -40,7 +40,7 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
-}
+} 
 
 .card > img {
   margin-bottom: .75rem;
@@ -57,4 +57,12 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+}
+
+#navbarHeader, .navbar{
+  background-color: black;
+}
+
+.navbar-toggler {
+  background-color:  white;
 }
