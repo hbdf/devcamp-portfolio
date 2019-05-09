@@ -1,28 +1,27 @@
-<div class="col-md-8 blog-main">
-  <p id="notice"><%= notice %></p>
 
-  <h1>Blogs</h1>
+<p id="notice"><%= notice %></p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Date</th>
-        <th>Body</th>
-        <th colspan="4"></th>
-      </tr>
-    </thead>
+<h1>Blogs</h1>
 
-    <tbody>
-      <%= render @blogs%>
-    </tbody>
-  </table>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Body</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
 
-  <br>
-  <nav class="blog-pagination">
-    <a class="btn btn-outline-primary" href="#">Older</a>
-    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-  </nav>
+  <tbody>
+    <%= render @blogs%>
+  </tbody>
+</table>
 
-</div><!-- /.blog-main -->
+<br>
+<nav class="blog-pagination">
+  <a class="btn btn-outline-primary" href="#">Older</a>
+  <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+</nav>
+
 
