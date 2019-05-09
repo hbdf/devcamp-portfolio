@@ -65,3 +65,7 @@ gem 'jquery-rails'
 gem 'helio_view_tool', '~> 0.1.2' 
 
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+
+gem "font-awesome-rails"
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
