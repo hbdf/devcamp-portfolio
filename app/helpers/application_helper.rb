@@ -59,4 +59,10 @@ module ApplicationHelper
     "active" if current_page? path
   end
 
+  def alerts alert=nil
+    alert = (alert || flash[:alert] || flash[:notice] || flash[:error])
+    if alert  
+      js add_gritter(alert, title: "Helio Duarte Portfolio")
+    end
+  end
 end
