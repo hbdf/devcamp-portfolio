@@ -206,3 +206,17 @@ body {
   background: image-url('background-home.jpg') no-repeat;
   background-size: cover;
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;
+
+}
+
+.tech-news a{
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
