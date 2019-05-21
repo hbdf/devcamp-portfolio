@@ -107,6 +107,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    gritter (1.2.0)
     helio_view_tool (0.1.2)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
@@ -264,6 +265,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.7, >= 2.7.2)
   font-awesome-rails
   friendly_id (~> 5.2.4)
+  gritter (~> 1.2)
   helio_view_tool (~> 0.1.2)
   jbuilder (~> 2.5)
   jquery-rails
