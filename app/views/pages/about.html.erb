@@ -3,12 +3,32 @@
     <h1>About Me</h1>
 
     <div class="row">
-      <div calss="col=md-4">
+      <div class="col=md-4" style="margin-right:10px;">
         <%= image_tag "profileRotatedAndCutted.jpg", 
         width: 300, alt: "Profile picture"%>
       </div>
       <div calss="col=md-8">
         <p> TEXT </p>
+
+        <p> 
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+        </p>
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              JOBBBBSSSSSS
+            </div>
+          </div>
+        </p>
       </div>
     </div>
   </div>
